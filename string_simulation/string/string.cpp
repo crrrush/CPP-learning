@@ -194,11 +194,13 @@ namespace simulation
 
 	char& string::operator[](size_t index)
 	{
+		assert(index < _size);
 		return _str[index];
 	}
 
 	const char& string::operator[](size_t index) const
 	{
+		assert(index < _size);
 		return _str[index];
 	}
 
